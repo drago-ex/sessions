@@ -1,0 +1,19 @@
+{
+	"name": "drago-fw/sessions",
+	"type": "library",
+	"description": "Use of sessions outside presenter",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Zdeněk Papučík",
+			"homepage": "https://github.com/accgit"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"nette/http": "~2.3"
+	},
+	"autoload": {
+		"classmap": ["src/"]
+	}
+}
