@@ -1,8 +1,6 @@
 ## Sessions
 Use of sessions outside presenter.
 
-## Instruction
-
 Example 1:
 ```neon
 services:
@@ -18,12 +16,10 @@ sessionSection->addValue = 'MyValue';
 OR:
 
 ```php
+//Notice: you can thus rewrite your original parameter.
 $this->sessions->sessionSection = $this->sessions->session->getSection('namespace');
 $this->sessions->sessionSection->addValue = 'MyValue';
 ```
-
-Notice:
-you can thus rewrite your original parameter!
 
 Example 2:
 ```neon
@@ -36,5 +32,5 @@ $sessionSection = $this->sessions->getSessionSection();
 sessionSection->addValue = 'MyValue';
 ```
 
-Detailed documentation:
+## Detailed documentation:
 [https://doc.nette.org/en/2.3/sessions](https://doc.nette.org/en/2.3/sessions)
