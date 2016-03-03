@@ -2,7 +2,7 @@
 Use of sessions outside presenter.
 
 ## Example 1:
-```neon
+```yaml
 services:
 	- Drago\Application\Http\Sessions
 ```
@@ -22,7 +22,7 @@ $this->sessions->sessionSection->addValue = 'MyValue';
 ```
 
 ## Example 2:
-```neon
+```yaml
 services:
 	- Drago\Application\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
