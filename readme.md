@@ -29,7 +29,7 @@ services:
 
 ```php
 $sessionSection = $this->sessions->getSessionSection();
-sessionSection->addValue = 'MyValue';
+$sessionSection->addValue = 'MyValue';
 ```
 
 ## Detailed documentation:
