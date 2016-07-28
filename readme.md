@@ -32,5 +32,5 @@ $sessionSection = $this->sessions->getSessionSection();
 $sessionSection->addValue = 'MyValue';
 ```
 
-## Detailed documentation:
+## Detailed documentation
 [https://doc.nette.org/en/2.3/sessions](https://doc.nette.org/en/2.3/sessions)
