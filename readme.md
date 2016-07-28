@@ -1,7 +1,7 @@
 ## Sessions
 Use of sessions outside presenter.
 
-## Example 1:
+## Example 1
 ```yaml
 services:
 	- Drago\Application\Http\Sessions
@@ -21,7 +21,7 @@ $this->sessions->sessionSection = $this->sessions->session->getSection('namespac
 $this->sessions->sessionSection->addValue = 'MyValue';
 ```
 
-## Example 2:
+## Example 2
 ```yaml
 services:
 	- Drago\Application\Http\Sessions(@Nette\Http\Session, 'namespace')
