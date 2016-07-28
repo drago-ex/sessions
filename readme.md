@@ -13,7 +13,7 @@ $sessionSection = $this->sessions->getSessionSection('namespace');
 sessionSection->addValue = 'MyValue';
 ```
 
-OR:
+OR
 
 ```php
 //Notice: you can thus rewrite your original parameter.
