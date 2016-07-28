@@ -41,10 +41,8 @@ class Sessions extends Nette\Object
 	public function getSessionSection($section = NULL)
 	{
 		if (isset($section)) {
-
 			$this->sessionSection = $this->session->getSection($section);
 			return $this->sessionSection;
-
 		} else {
 			return $this->sessionSection;
 		}
