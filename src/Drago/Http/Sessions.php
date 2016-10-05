@@ -14,8 +14,10 @@ use Nette\Http\SessionSection;
  * Use of sessions outside presenter.
  * @author Zdeněk Papučík
  */
-class Sessions extends Nette\Object
+class Sessions
 {
+	use Nette\SmartObject;
+
 	/**
 	 * @var Session
 	 */
