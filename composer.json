@@ -14,6 +14,9 @@
 		"nette/http": "~2.4.0",
 		"nette/utils": "~2.4.0"
 	},
+	"replace": {
+		"drago-fw/sessions": "*"
+	},
 	"autoload": {
 		"classmap": ["src/"]
 	}
