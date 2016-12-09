@@ -1,4 +1,4 @@
-## Sessions
+## Drago Sessions
 
 Use of sessions outside presenter.
 
