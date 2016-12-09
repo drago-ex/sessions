@@ -1,5 +1,5 @@
 {
-	"name": "drago-fw/sessions",
+	"name": "drago-ex/sessions",
 	"type": "library",
 	"description": "Use of sessions outside presenter",
 	"license": ["MIT"],
