@@ -30,6 +30,8 @@ $this->sessions->sessionSection->addValue = 'MyValue';
 
 ```yaml
 services:
+
+	# Use of sessions outside presenter
 	- Drago\Application\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
 
