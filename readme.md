@@ -21,7 +21,7 @@ sessionSection->addValue = 'MyValue';
 OR
 
 ```php
-//Notice: you can thus rewrite your original parameter.
+// Notice: you can thus rewrite your original parameter.
 $this->sessions->sessionSection = $this->sessions->session->getSection('namespace');
 $this->sessions->sessionSection->addValue = 'MyValue';
 ```
