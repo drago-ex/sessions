@@ -6,6 +6,8 @@ Use of sessions outside presenter.
 
 ```yaml
 services:
+
+	# Use of sessions outside presenter
 	- Drago\Application\Http\Sessions
 ```
 
