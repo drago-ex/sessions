@@ -28,7 +28,7 @@ $this->sessions->sessionSection->addValue = 'MyValue';
 
 ## Example 2
 
-```yaml
+```
 services:
 
 	# Use of sessions outside presenter
