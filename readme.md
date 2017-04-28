@@ -4,7 +4,7 @@ Use of sessions outside presenter.
 
 ## Example 1
 
-```yaml
+```
 services:
 
 	# Use of sessions outside presenter
