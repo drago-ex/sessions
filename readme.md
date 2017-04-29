@@ -7,7 +7,7 @@ Use of sessions outside presenter.
 ```
 services:
 
-	# Use of sessions outside presenter
+	# use of sessions outside presenter
 	- Drago\Http\Sessions
 ```
 
