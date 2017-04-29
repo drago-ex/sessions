@@ -7,7 +7,7 @@ Use of sessions outside presenter.
 ```
 services:
 
-	# use of sessions outside presenter
+	# Use of sessions outside presenter.
 	- Drago\Http\Sessions
 ```
 
@@ -31,7 +31,7 @@ $this->sessions->sessionSection->addValue = 'MyValue';
 ```
 services:
 
-	# use of sessions outside presenter
+	# Use of sessions outside presenter.
 	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
 
