@@ -1,7 +1,5 @@
 ## Drago Sessions
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98971344422d45dcbadcdc771b9a70ed)](https://www.codacy.com/app/zdenek.papucik/sessions?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=drago-ex/sessions&amp;utm_campaign=Badge_Grade)
-
 Use of sessions outside presenter.
 
 ## Example 1
