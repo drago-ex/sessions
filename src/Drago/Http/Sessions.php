@@ -45,8 +45,6 @@ class Sessions
 		if (isset($section)) {
 			$this->sessionSection = $this->session->getSection($section);
 			return $this->sessionSection;
-		} else {
-			return $this->sessionSection;
 		}
 	}
 
