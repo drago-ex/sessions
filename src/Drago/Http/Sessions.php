@@ -7,8 +7,7 @@
 namespace Drago\Http;
 
 use Nette;
-use Nette\Http\Session;
-use Nette\Http\SessionSection;
+use Nette\Http;
 
 /**
  * Use of sessions outside presenter.
@@ -19,16 +18,16 @@ class Sessions
 	use Nette\SmartObject;
 
 	/**
-	 * @var Session
+	 * @var Http\Session
 	 */
 	public $session;
 
 	/**
-	 * @var SessionSection
+	 * @var Http\SessionSection
 	 */
 	public $sessionSection;
 
-	public function __construct(Session $session, $section = NULL)
+	public function __construct(Http\Session $session, $section = NULL)
 	{
 		$this->session = $session;
 		if (isset($section)) {
@@ -44,8 +43,9 @@ class Sessions
 	{
 		if (isset($section)) {
 			$this->sessionSection = $this->session->getSection($section);
-			return $this->sessionSection;
 		}
+		
+		return $this->sessionSection;
 	}
 
 }
