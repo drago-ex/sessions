@@ -37,14 +37,13 @@ class Sessions
 
 	/**
 	 * @param  string
-	 * @return SessionSection
+	 * @return Http\SessionSection
 	 */
 	public function getSessionSection($section = NULL)
 	{
 		if (isset($section)) {
 			$this->sessionSection = $this->session->getSection($section);
 		}
-		
 		return $this->sessionSection;
 	}
 
