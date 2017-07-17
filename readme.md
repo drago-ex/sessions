@@ -15,7 +15,7 @@ services:
 	- Drago\Http\Sessions
 ```
 
-Use the namespace in the class:
+The namespace used in the class:
 
 ```php
 $sessionSection = $this->sessions->getSessionSection('namespace');
@@ -40,6 +40,7 @@ services:
 	# Use of sessions outside presenter.
 	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
+The namespace used in the class:
 
 ```php
 $sessionSection = $this->sessions->getSessionSection();
