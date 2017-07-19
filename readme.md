@@ -4,33 +4,7 @@
 
 Using a session outside the Presenter.
 
-## Example 1
-
-Add the configuration file:
-
-```
-services:
-
-	# Use of sessions outside presenter.
-	- Drago\Http\Sessions
-```
-
-The namespace used in the class:
-
-```php
-$sessionSection = $this->sessions->getSessionSection('namespace');
-sessionSection->addValue = 'MyValue';
-```
-
-OR
-
-```php
-// Notice: you can thus rewrite your original parameter.
-$this->sessions->sessionSection = $this->sessions->session->getSection('namespace');
-$this->sessions->sessionSection->addValue = 'MyValue';
-```
-
-## Example 2
+## Instruction
 
 Add the configuration file:
 
@@ -40,7 +14,8 @@ services:
 	# Use of sessions outside presenter.
 	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
-The namespace used in the configuration file:
+
+## Usage
 
 ```php
 $sessionSection = $this->sessions->getSessionSection();
