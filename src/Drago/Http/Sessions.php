@@ -18,33 +18,37 @@ class Sessions
 	use Nette\SmartObject;
 
 	/**
-	 * @var Http\Session
+	 * @var string
 	 */
-	public $session;
+	private $namespace;
 
 	/**
-	 * @var Http\SessionSection
+	 * @var Http\Session
 	 */
-	public $sessionSection;
+	private $session;
 
-	public function __construct(Http\Session $session, $section = NULL)
+	public function __construct(Http\Session $session, $namespace)
 	{
 		$this->session = $session;
-		if (isset($section)) {
-			$this->sessionSection = $this->session->getSection($section);
-		}
+		$this->namespace = $namespace;
+	}
+
+	/**
+	 * @return Http\Session
+	 */
+	public function getSession()
+	{
+		return $this->session;
 	}
 
 	/**
 	 * @param  string
 	 * @return Http\SessionSection
 	 */
-	public function getSessionSection($section = NULL)
+	public function getSessionSection()
 	{
-		if (isset($section)) {
-			$this->sessionSection = $this->session->getSection($section);
-		}
-		return $this->sessionSection;
+		$section = $this->session->getSection($this->namespace);
+		return $section;
 	}
 
 }
