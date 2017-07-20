@@ -47,8 +47,7 @@ class Sessions
 	 */
 	public function getSessionSection()
 	{
-		$section = $this->session->getSection($this->namespace);
-		return $section;
+		return $this->session->getSection($this->namespace);
 	}
 
 }
