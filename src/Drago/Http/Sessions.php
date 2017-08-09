@@ -11,7 +11,6 @@ use Nette\Http;
 
 /**
  * Use of sessions outside presenter.
- * @author Zdeněk Papučík
  */
 class Sessions
 {
