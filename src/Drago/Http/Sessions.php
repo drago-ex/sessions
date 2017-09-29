@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Extending for Nette Framework
+ * Extension Nette
  * Copyright (c) 2015, Zdeněk Papučík
  */
 namespace Drago\Http;
@@ -10,7 +10,7 @@ use Nette;
 use Nette\Http;
 
 /**
- * Use of sessions outside presenter.
+ * Použití sessions mimo presenter.
  */
 class Sessions
 {
@@ -28,7 +28,7 @@ class Sessions
 
 	public function __construct(Http\Session $session, $namespace)
 	{
-		$this->session = $session;
+		$this->session   = $session;
 		$this->namespace = $namespace;
 	}
 
