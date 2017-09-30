@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Extension Nette
+ * Drago Sessions
  * Copyright (c) 2015, Zdeněk Papučík
  */
 namespace Drago\Http;
