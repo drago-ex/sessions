@@ -4,16 +4,27 @@
 
 Použivání sessions mimo presenter.
 
+## Požadavky
+
+- PHP 7.0.8 nebo vyšší
+- composer
+
+## Instalace
+
+```
+composer require drago-ex/sessions
+```
+
 ## Registrace služby
 
 ```
 services:
 
-	# Použití sessions mimo presenter.
+	# Použivání sessions mimo presenter.
 	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
 
-## Příklad jak vložit hodnotu do sessions
+## Příklad, jak vložit hodnotu do sessions
 
 ```php
 $sessionSection = $this->sessions->getSessionSection();
