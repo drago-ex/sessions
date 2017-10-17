@@ -10,7 +10,7 @@ use Nette;
 use Nette\Http;
 
 /**
- * Použivání sessions mimo presenter.
+ * Using sessions outside the presenter.
  */
 class Sessions
 {

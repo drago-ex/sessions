@@ -1,7 +1,7 @@
 {
 	"name": "drago-ex/sessions",
 	"type": "library",
-	"description": "Použití sessions mimo presenter.",
+	"description": "Using sessions outside the presenter.",
 	"license": ["MIT"],
 	"authors": [
 		{
