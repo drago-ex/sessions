@@ -19,19 +19,21 @@ class Sessions
 {
 	use Nette\SmartObject;
 
-	/** @var string */
+	/**
+	 * @var string
+	 */
 	private $namespace;
 
-	/** @var Http\Session */
+	/**
+	 * @var Http\Session
+	 */
 	private $session;
 
-
-	public function __construct(Http\Session $session, $namespace)
+	public function __construct(Http\Session $session, string $namespace)
 	{
 		$this->session   = $session;
 		$this->namespace = $namespace;
 	}
-
 
 	/**
 	 * Getting sessions.
@@ -40,7 +42,6 @@ class Sessions
 	{
 		return $this->session;
 	}
-
 
 	/**
 	 * Getting sessions section by namespace.
