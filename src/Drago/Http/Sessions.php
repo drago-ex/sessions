@@ -1,5 +1,8 @@
 <?php
 
+// Enable strict mode.
+declare(strict_types = 1);
+
 /**
  * Drago Sessions
  * Copyright (c) 2015, Zdeněk Papučík
@@ -16,15 +19,12 @@ class Sessions
 {
 	use Nette\SmartObject;
 
-	/**
-	 * @var string
-	 */
+	/** @var string */
 	private $namespace;
 
-	/**
-	 * @var Http\Session
-	 */
+	/** @var Http\Session */
 	private $session;
+
 
 	public function __construct(Http\Session $session, $namespace)
 	{
@@ -32,19 +32,20 @@ class Sessions
 		$this->namespace = $namespace;
 	}
 
+
 	/**
-	 * @return Http\Session
+	 * Getting sessions.
 	 */
-	public function getSession()
+	public function getSession(): Http\Session
 	{
 		return $this->session;
 	}
 
+
 	/**
-	 * @param string
-	 * @return Http\SessionSection
+	 * Getting sessions section by namespace.
 	 */
-	public function getSessionSection()
+	public function getSessionSection(): Http\SessionSection
 	{
 		return $this->session->getSection($this->namespace);
 	}

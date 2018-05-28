@@ -6,7 +6,7 @@ Using sessions outside the presenter.
 
 ## Requirements
 
-- PHP 7.0.8 or higher
+- PHP 7.1 or higher
 - composer
 
 ## Installation
@@ -20,7 +20,7 @@ composer require drago-ex/sessions
 ```
 services:
 
-	# Using sessions outside the presenter.
+	# using sessions outside the presenter
 	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
 ```
 
