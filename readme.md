@@ -6,7 +6,7 @@ Using sessions outside the presenter.
 
 ## Requirements
 
-- PHP 7.1 or higher
+- PHP 5.6 or higher
 - composer
 
 ## Installation

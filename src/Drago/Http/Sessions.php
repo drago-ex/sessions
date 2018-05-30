@@ -1,8 +1,5 @@
 <?php
 
-// Enable strict mode.
-declare(strict_types = 1);
-
 /**
  * Drago Sessions
  * Copyright (c) 2015, Zdeněk Papučík
@@ -29,7 +26,7 @@ class Sessions
 	 */
 	private $session;
 
-	public function __construct(Http\Session $session, string $namespace)
+	public function __construct(Http\Session $session, $namespace)
 	{
 		$this->session   = $session;
 		$this->namespace = $namespace;
@@ -37,16 +34,18 @@ class Sessions
 
 	/**
 	 * Getting sessions.
+	 * @return Http\Session
 	 */
-	public function getSession(): Http\Session
+	public function getSession()
 	{
 		return $this->session;
 	}
 
 	/**
 	 * Getting sessions section by namespace.
+	 * @return Http\SessionSection
 	 */
-	public function getSessionSection(): Http\SessionSection
+	public function getSessionSection()
 	{
 		return $this->session->getSection($this->namespace);
 	}
