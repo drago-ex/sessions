@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /**
  * Drago Sessions
  * Copyright (c) 2015, Zdeněk Papučík
@@ -26,28 +28,28 @@ class Sessions
 	 */
 	private $session;
 
+
 	public function __construct(Http\Session $session, $namespace)
 	{
 		$this->session   = $session;
 		$this->namespace = $namespace;
 	}
 
+
 	/**
 	 * Getting sessions.
-	 * @return Http\Session
 	 */
-	public function getSession()
+	public function getSession(): Http\Session
 	{
 		return $this->session;
 	}
 
+
 	/**
 	 * Getting sessions section by namespace.
-	 * @return Http\SessionSection
 	 */
-	public function getSessionSection()
+	public function getSessionSection(): Http\SessionSection
 	{
 		return $this->session->getSection($this->namespace);
 	}
-
 }
