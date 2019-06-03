@@ -1,8 +1,10 @@
-<?php declare(strict_types = 1);
+<?php
+
+declare(strict_types = 1);
 
 /**
- * Drago Sessions
- * Copyright (c) 2015, Zdeněk Papučík
+ * Drago Http
+ * Package built on Nette Framework
  */
 namespace Drago\Http;
 
@@ -11,6 +13,7 @@ use Nette\Http;
 
 /**
  * Using sessions outside the presenter.
+ * @package Drago\Http
  */
 class Sessions
 {
