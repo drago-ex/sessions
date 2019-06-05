@@ -32,7 +32,7 @@ class Sessions
 
 	public function __construct(Http\Session $session, $namespace)
 	{
-		$this->session   = $session;
+		$this->session = $session;
 		$this->namespace = $namespace;
 	}
 
