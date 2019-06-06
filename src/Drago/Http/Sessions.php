@@ -11,6 +11,7 @@ namespace Drago\Http;
 use Nette;
 use Nette\Http;
 
+
 /**
  * Using sessions outside the presenter.
  * @package Drago\Http
@@ -19,14 +20,10 @@ class Sessions
 {
 	use Nette\SmartObject;
 
-	/**
-	 * @var string
-	 */
+	/** @var string */
 	private $namespace;
 
-	/**
-	 * @var Http\Session
-	 */
+	/** @var Http\Session */
 	private $session;
 
 
