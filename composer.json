@@ -14,6 +14,10 @@
 		"nette/http": "^3.0",
 		"nette/utils": "^3.0"
 	},
+	"require-dev": {
+		"nette/tester": "^2.0",
+		"tracy/tracy": "^2.3"
+	},
 	"replace": {
 		"drago-fw/sessions": "self.version"
 	},
