@@ -6,7 +6,6 @@
 <p align="center">Simple packages built on Nette Framework</p>
 
 ## Info
-
 Using sessions outside the presenter.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
@@ -14,32 +13,13 @@ Using sessions outside the presenter.
 [![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/sessions/badge)](https://www.codefactor.io/repository/github/drago-ex/sessions)
 
 ## Requirements
-
 - PHP 7.1 or higher
 - composer
 
 ## Installation
-
 ```
 composer require drago-ex/sessions
 ```
 
-## Service registration
-
-```
-services:
-
-	# using sessions outside the presenter
-	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')
-```
-
-## An example of how to insert a value into sessions
-
-```php
-$sessionSection = $this->sessions->getSessionSection();
-$sessionSection->addValue = 'Value';
-```
-
 ## Documentation
-
-[https://doc.nette.org/en/2.4/sessions](https://doc.nette.org/en/2.4/sessions)
+https://github.com/drago-ex/sessions/wiki/Documentation
