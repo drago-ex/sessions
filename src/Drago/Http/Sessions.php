@@ -6,6 +6,7 @@ declare(strict_types = 1);
  * Drago Http
  * Package built on Nette Framework
  */
+
 namespace Drago\Http;
 
 use Nette\Http\Session;

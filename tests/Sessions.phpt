@@ -22,7 +22,7 @@ $sessionSection->next = 'Next';
 Assert::same('Next', $sessionSection->next);
 
 $sessionSection->array = [
-	'Test 1', 'Test 2'
+	'Test 1', 'Test 2',
 ];
 
 Assert::same('Test 1', $sessionSection->array[0]);
