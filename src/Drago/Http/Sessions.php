@@ -16,7 +16,6 @@ use Nette\SmartObject;
 
 /**
  * Using sessions outside the presenter.
- * @package Drago\Http
  */
 class Sessions
 {
