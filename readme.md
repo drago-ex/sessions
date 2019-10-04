@@ -12,6 +12,7 @@ Using sessions outside the presenter.
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fsessions.svg)](https://badge.fury.io/ph/drago-ex%2Fsessions)
 [![Build Status](https://travis-ci.org/drago-ex/sessions.svg?branch=master)](https://travis-ci.org/drago-ex/sessions)
 [![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/sessions/badge)](https://www.codefactor.io/repository/github/drago-ex/sessions)
+[![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
 ## Requirements
 - PHP 7.1 or higher
