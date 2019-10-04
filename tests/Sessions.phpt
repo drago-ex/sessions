@@ -25,5 +25,7 @@ $sessionSection->array = [
 	'Test 1', 'Test 2',
 ];
 
+
 Assert::same('Test 1', $sessionSection->array[0]);
 Assert::same('Test 2', $sessionSection->array[1]);
+Assert::type(Session::class, $session->getSession());
