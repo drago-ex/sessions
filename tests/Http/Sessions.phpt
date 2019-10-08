@@ -2,30 +2,27 @@
 
 declare(strict_types = 1);
 
-use Drago\Http\Sessions;
-use Nette\Http\RequestFactory;
-use Nette\Http\Response;
+namespace Test\Http;
+
+use Drago;
 use Nette\Http\Session;
+use Nette\Http\SessionSection;
+use Test\TestCaseAbstract;
 use Tester\Assert;
 
-require __DIR__ . '/../bootstrap.php';
-
-$request = (new RequestFactory())->createHttpRequest();
-$session = new Sessions(new Session($request, new Response()), 'sessions');
-
-$sessionSection = $session->getSessionSection();
-$sessionSection->value = 'Value';
-
-Assert::same('Value', $sessionSection->value);
-
-$sessionSection->next = 'Next';
-Assert::same('Next', $sessionSection->next);
-
-$sessionSection->array = [
-	'Test 1', 'Test 2',
-];
+$container = require __DIR__ . '/../bootstrap.php';
 
 
-Assert::same('Test 1', $sessionSection->array[0]);
-Assert::same('Test 2', $sessionSection->array[1]);
-Assert::type(Session::class, $session->getSession());
+class Sessions extends TestCaseAbstract
+{
+	public function test01(): void
+	{
+		$class = $this->container->getByType(Drago\Http\Sessions::class);
+		Assert::type(Drago\Http\Sessions::class, $class);
+		Assert::type(Session::class, $class->getSession());
+		Assert::type(SessionSection::class, $class->getSessionSection());
+	}
+}
+
+$class = new Sessions($container);
+$class->run();
