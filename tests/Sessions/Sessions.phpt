@@ -8,7 +8,7 @@ use Nette\Http\Response;
 use Nette\Http\Session;
 use Tester\Assert;
 
-require __DIR__ . '/bootstrap.php';
+require __DIR__ . '/../bootstrap.php';
 
 $request = (new RequestFactory())->createHttpRequest();
 $session = new Sessions(new Session($request, new Response()), 'sessions');
