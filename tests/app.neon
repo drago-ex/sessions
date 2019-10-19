@@ -1,2 +1,0 @@
-services:
-	- Drago\Http\Sessions(@Nette\Http\Session, 'namespace')

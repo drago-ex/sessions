@@ -4,25 +4,18 @@ declare(strict_types = 1);
 
 namespace Test\Http;
 
-use Drago;
+use Drago\Http\Sessions;
+use Nette\Http\RequestFactory;
+use Nette\Http\Response;
 use Nette\Http\Session;
-use Nette\Http\SessionSection;
-use Test\TestCaseAbstract;
 use Tester\Assert;
 
-$container = require __DIR__ . '/../bootstrap.php';
+require __DIR__ . '/../bootstrap.php';
 
+$namespace = 'namespace';
+$request = (new RequestFactory)->createHttpRequest();
+$session = new Session($request, new Response);
+$class = new Sessions($session, $namespace);
 
-class Sessions extends TestCaseAbstract
-{
-	public function test01(): void
-	{
-		$class = $this->container->getByType(Drago\Http\Sessions::class);
-		Assert::type(Drago\Http\Sessions::class, $class);
-		Assert::type(Session::class, $class->getSession());
-		Assert::type(SessionSection::class, $class->getSessionSection());
-	}
-}
-
-$class = new Sessions($container);
-$class->run();
+Assert::type($class->getSession(), $session);
+Assert::type($class->getSessionSection(), $session->getSection($namespace));
