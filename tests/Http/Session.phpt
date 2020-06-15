@@ -2,6 +2,7 @@
 
 declare(strict_types = 1);
 
+use Drago\Http\Session;
 use Nette\Http;
 use Tester\Assert;
 
@@ -10,7 +11,7 @@ require __DIR__ . '/../bootstrap.php';
 $section = 'section';
 $request = new Http\RequestFactory;
 $session = new Http\Session($request->fromGlobals(), new Http\Response);
-$class = new Drago\Http\Sessions($session, $section);
+$class = new Session($session, $section);
 
 Assert::type($class->getSession(), $session);
 Assert::type($class->getSessionSection(), $session->getSection($section));

@@ -6,7 +6,7 @@
 <p align="center">Simple packages built on Nette Framework</p>
 
 ## Info
-Using sessions outside the presenter.
+Using session outside the presenter.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fsessions.svg)](https://badge.fury.io/ph/drago-ex%2Fsessions)

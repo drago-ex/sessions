@@ -9,26 +9,25 @@ declare(strict_types = 1);
 
 namespace Drago\Http;
 
-use Nette\Http\Session;
-use Nette\Http\SessionSection;
+use Nette\Http;
 use Nette\SmartObject;
 
 
 /**
- * Using sessions outside the presenter.
+ * Using session outside the presenter.
  */
-class Sessions
+class Session
 {
 	use SmartObject;
 
 	/** @var string */
 	private $section;
 
-	/** @var Session */
+	/** @var Http\Session */
 	private $session;
 
 
-	public function __construct(Session $session, string $section)
+	public function __construct(Http\Session $session, string $section)
 	{
 		$this->session = $session;
 		$this->section = $section;
@@ -36,18 +35,18 @@ class Sessions
 
 
 	/**
-	 * Getting sessions.
+	 * Provides access to session sections as well as session settings and management methods.
 	 */
-	public function getSession(): Session
+	public function getSession(): Http\Session
 	{
 		return $this->session;
 	}
 
 
 	/**
-	 * Getting sessions section by namespace.
+	 * Returns specified session section.
 	 */
-	public function getSessionSection(): SessionSection
+	public function getSessionSection(): Http\SessionSection
 	{
 		return $this->session->getSection($this->section);
 	}
