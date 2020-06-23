@@ -14,7 +14,7 @@ Using session outside the presenter.
 [![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/sessions/badge)](https://www.codefactor.io/repository/github/drago-ex/sessions)
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
-## Requirements
+## Technology
 - PHP 7.1 or higher
 - composer
 
