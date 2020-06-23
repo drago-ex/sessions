@@ -5,7 +5,8 @@
 <h3 align="center">Drago Extension</h3>
 <p align="center">Simple packages built on Nette Framework</p>
 
-## Info
+## Drago Sessions
+
 Using session outside the presenter.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
@@ -15,13 +16,26 @@ Using session outside the presenter.
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
 ## Requirements
+
 - PHP 7.1 or higher
 - composer
 
 ## Installation
+
 ```
 composer require drago-ex/sessions
 ```
 
-## Documentation
-https://github.com/drago-ex/sessions/wiki/Documentation
+## Service registration
+
+```neon
+extensions:
+	- Drago\Http\ExtraSession(@Nette\Http\Session, 'namespace')
+```
+
+# Use
+
+```php
+$sessionSection = $this->ExtraSession->getSessionSection();
+$sessionSection->addValue = 'Value';
+```
