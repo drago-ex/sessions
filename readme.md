@@ -33,7 +33,7 @@ extensions:
 	- Drago\Http\ExtraSession(@Nette\Http\Session, 'namespace')
 ```
 
-# Use
+## Use
 
 ```php
 $sessionSection = $this->ExtraSession->getSessionSection();
