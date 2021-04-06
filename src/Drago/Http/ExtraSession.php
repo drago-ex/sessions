@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /**
  * Drago Extension
@@ -21,14 +21,10 @@ class ExtraSession
 {
 	use SmartObject;
 
-	private string $section;
-	private Session $session;
-
-
-	public function __construct(Session $session, string $section)
-	{
-		$this->session = $session;
-		$this->section = $section;
+	public function __construct(
+		private string $section,
+		private Session $session,
+	) {
 	}
 
 
