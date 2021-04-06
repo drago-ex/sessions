@@ -15,7 +15,7 @@ Using session outside the presenter.
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
 ## Technology
-- PHP 7.1 or higher
+- PHP 8.0 or higher
 - composer
 
 ## Installation
