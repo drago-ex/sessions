@@ -10,7 +10,7 @@ Using session outside the presenter.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fsessions.svg)](https://badge.fury.io/ph/drago-ex%2Fsessions)
-[![Build Status](https://travis-ci.com/drago-ex/sessions.svg?branch=master)](https://travis-ci.org/drago-ex/sessions)
+[![Build Status](https://travis-ci.com/drago-ex/sessions.svg?branch=master)](https://travis-ci.com/drago-ex/sessions)
 [![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/sessions/badge)](https://www.codefactor.io/repository/github/drago-ex/sessions)
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
