@@ -25,7 +25,7 @@ composer require drago-ex/sessions
 
 ## Service registration
 ```neon
-extensions:
+service:
 	- Drago\Http\ExtraSession(@Nette\Http\Session, 'namespace')
 ```
 
