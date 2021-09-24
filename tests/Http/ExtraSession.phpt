@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Test: Drago\Http\ExtraSession
+ */
+
 declare(strict_types=1);
 
 use Drago\Http\ExtraSession;
