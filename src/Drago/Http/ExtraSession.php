@@ -22,8 +22,8 @@ class ExtraSession
 	use SmartObject;
 
 	public function __construct(
-		private Session $session,
-		private string $section,
+		private readonly Session $session,
+		private readonly string $section,
 	) {
 	}
 
