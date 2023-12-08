@@ -11,7 +11,6 @@ namespace Drago\Http;
 
 use Nette\Http\Session;
 use Nette\Http\SessionSection;
-use Nette\SmartObject;
 
 
 /**
@@ -19,8 +18,6 @@ use Nette\SmartObject;
  */
 class ExtraSession
 {
-	use SmartObject;
-
 	public function __construct(
 		private readonly Session $session,
 		private readonly string $section,
