@@ -25,6 +25,9 @@ service:
 
 ## Use
 ```php
-$sessionSection = $this->ExtraSession->getSessionSection();
-$sessionSection->addValue = 'Value';
+// Setting values.
+$this->ExtraSession->getSessionSection()->set('value');
+
+// Reading values.
+$this->ExtraSession->getSessionSection()->get();
 ```
