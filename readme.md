@@ -12,6 +12,9 @@ Using session outside the presenter.
 - PHP 8.1 or higher
 - composer
 
+## Knowledge
+- [Sessions]([https://github.com/dg/dibi](https://doc.nette.org/en/http/sessions))
+
 ## Installation
 ```
 composer require drago-ex/sessions
