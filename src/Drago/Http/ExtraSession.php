@@ -14,19 +14,26 @@ use Nette\Http\SessionSection;
 
 
 /**
- * Using session outside the presenter.
+ * This helper class provides an easy way to access the Nette session outside the presenter context.
+ * It allows working with specific session sections and provides methods for managing
+ * sessions within the application. The class is designed to be used outside of presenters,
+ * which is useful when working with session data in services or components.
  */
-class ExtraSession
+final readonly class ExtraSession
 {
+	/**
+	 * @param Session $session Nette session service
+	 * @param string $section Name of the session section to access
+	 */
 	public function __construct(
-		private readonly Session $session,
-		private readonly string $section,
+		private Session $session,
+		private string $section,
 	) {
 	}
 
 
 	/**
-	 * Provides access to session sections as well as session settings and management methods.
+	 * Returns the Nette session service.
 	 */
 	public function getSession(): Session
 	{
@@ -35,7 +42,7 @@ class ExtraSession
 
 
 	/**
-	 * Returns specified session section.
+	 * Returns a specific session section.
 	 */
 	public function getSessionSection(): SessionSection
 	{

@@ -1,5 +1,5 @@
 ## Drago Sessions
-Using session outside the presenter.
+A helper package for managing sessions outside the presenter in Nette Framework.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fsessions.svg)](https://badge.fury.io/ph/drago-ex%2Fsessions)
@@ -9,8 +9,12 @@ Using session outside the presenter.
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
 ## Technology
-- PHP 8.1 or higher
+- PHP 8.3 or higher
 - composer
+
+## Features
+- Provides access to Nette sessions and session sections outside the presenter.
+- Ideal for managing session data in services or components within a Nette application.
 
 ## Knowledge
 - [Sessions]([https://github.com/dg/dibi](https://doc.nette.org/en/http/sessions))
@@ -21,16 +25,21 @@ composer require drago-ex/sessions
 ```
 
 ## Service registration
+In your `neon` configuration, register the `ExtraSession` service:
 ```neon
 service:
 	- Drago\Http\ExtraSession(@Nette\Http\Session, 'namespace')
 ```
 
-## Use
+## Usage
+Setting session values
 ```php
-// Setting values.
-$this->ExtraSession->getSessionSection()->set('value');
+// Setting a session value in the specified section.
+$this->ExtraSession->getSessionSection()->set('key', 'value');
+```
 
-// Reading values.
-$this->ExtraSession->getSessionSection()->get();
+Reading session values
+```php
+// Getting a session value from the section.
+$value = $this->ExtraSession->getSessionSection()->get('key');
 ```
