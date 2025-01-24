@@ -46,6 +46,7 @@ final readonly class ExtraSession
 	 */
 	public function getSessionSection(): SessionSection
 	{
-		return $this->session->getSection($this->section);
+		return $this->getSession()
+			->getSection($this->section);
 	}
 }
