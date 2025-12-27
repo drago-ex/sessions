@@ -8,9 +8,10 @@ A helper package for managing sessions outside the presenter in Nette Framework.
 [![CodeFactor](https://www.codefactor.io/repository/github/drago-ex/sessions/badge)](https://www.codefactor.io/repository/github/drago-ex/sessions)
 [![Coverage Status](https://coveralls.io/repos/github/drago-ex/sessions/badge.svg?branch=master)](https://coveralls.io/github/drago-ex/sessions?branch=master)
 
-## Technology
-- PHP 8.3 or higher
-- composer
+## Requirements
+- PHP >= 8.3
+- Nette Framework
+- Composer
 
 ## Features
 - Provides access to Nette sessions and session sections outside the presenter.
@@ -43,3 +44,4 @@ Reading session values
 // Getting a session value from the section.
 $value = $this->ExtraSession->getSessionSection()->get('key');
 ```
+
