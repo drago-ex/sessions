@@ -1,7 +1,7 @@
 ## Drago Sessions
 A helper package for managing sessions outside the presenter in Nette Framework.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/drago-ex/sessions/master/license)
 [![PHP version](https://badge.fury.io/ph/drago-ex%2Fsessions.svg)](https://badge.fury.io/ph/drago-ex%2Fsessions)
 [![Tests](https://github.com/drago-ex/sessions/actions/workflows/tests.yml/badge.svg)](https://github.com/drago-ex/sessions/actions/workflows/tests.yml)
 [![Coding Style](https://github.com/drago-ex/sessions/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/sessions/actions/workflows/coding-style.yml)
@@ -44,4 +44,5 @@ Reading session values
 // Getting a session value from the section.
 $value = $this->ExtraSession->getSessionSection()->get('key');
 ```
+
 
