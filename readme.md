@@ -44,5 +44,3 @@ Reading session values
 // Getting a session value from the section.
 $value = $this->ExtraSession->getSessionSection()->get('key');
 ```
-
-
