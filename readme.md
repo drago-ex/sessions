@@ -42,4 +42,4 @@ $value = $this->ExtraSession->getSessionSection()->get('key');
 - Ideal for managing session data in services or components within a Nette application.
 
 ## Knowledge
-- [Sessions]([https://github.com/dg/dibi](https://doc.nette.org/en/http/sessions))
+- [Nette Sessions](https://doc.nette.org/en/http/sessions)
