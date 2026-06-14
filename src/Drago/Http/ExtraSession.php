@@ -18,14 +18,12 @@ final readonly class ExtraSession
 	}
 
 
-	/** Returns the Nette session service. */
 	public function getSession(): Session
 	{
 		return $this->session;
 	}
 
 
-	/** Returns a specific session section. */
 	public function getSessionSection(): SessionSection
 	{
 		return $this->getSession()
