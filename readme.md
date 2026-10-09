@@ -8,16 +8,19 @@ A helper package for managing sessions outside the presenter in Nette Framework.
 [![Coding Style](https://github.com/drago-ex/sessions/actions/workflows/coding-style.yml/badge.svg)](https://github.com/drago-ex/sessions/actions/workflows/coding-style.yml)
 
 ## Requirements
+
 - PHP >= 8.3
 - Nette Framework
 - Composer
 
 ## Installation
+
 ```
 composer require drago-ex/sessions
 ```
 
 ## Extension Registration
+
 In your `neon` configuration, register the `ExtraSession` service:
 ```neon
 service:
@@ -25,6 +28,7 @@ service:
 ```
 
 ## Examples
+
 Setting session values
 ```php
 // Setting a session value in the specified section.
@@ -38,8 +42,10 @@ $value = $this->ExtraSession->getSessionSection()->get('key');
 ```
 
 ## Features
+
 - Provides access to Nette sessions and session sections outside the presenter.
 - Ideal for managing session data in services or components within a Nette application.
 
 ## Knowledge
+
 - [Nette Sessions](https://doc.nette.org/en/http/sessions)
