@@ -1,7 +1,7 @@
 {
 	"name": "drago-ex/sessions",
-	"type": "library",
 	"description": "Helper class for accessing Nette session and session sections outside presenters.",
+	"type": "library",
 	"license": ["MIT"],
 	"authors": [
 		{
