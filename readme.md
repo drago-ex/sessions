@@ -9,7 +9,7 @@ A helper package for managing sessions outside the presenter in Nette Framework.
 
 ## Requirements
 
-- PHP >= 8.3
+- PHP >= 8.3, < 9
 - Nette Framework
 - Composer
 
