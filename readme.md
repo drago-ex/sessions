@@ -19,28 +19,51 @@ A helper package for managing sessions outside the presenter in Nette Framework.
 composer require drago-ex/sessions
 ```
 
-## Extension Registration
+## Service Registration
 
-In your `neon` configuration, register the `ExtraSession` service:
+Register an `ExtraSession` service for the session section you need in your `neon` configuration:
 ```neon
-service:
-	- Drago\Http\ExtraSession(@Nette\Http\Session, 'namespace')
+services:
+	- Drago\Http\ExtraSession(section: cart)
+```
+
+The `Nette\Http\Session` argument is autowired. When you need several sections, register named services
+and disable autowiring, so the right one is chosen explicitly:
+```neon
+services:
+	cartSession:
+		create: Drago\Http\ExtraSession(section: cart)
+		autowired: false
+
+	wishlistSession:
+		create: Drago\Http\ExtraSession(section: wishlist)
+		autowired: false
+
+	- App\Model\CartService(@cartSession)
 ```
 
 ## Examples
 
-Setting session values
 ```php
-// Setting a session value in the specified section.
-$this->ExtraSession->getSessionSection()->set('key', 'value');
-```
+use Drago\Http\ExtraSession;
 
-Reading session values
-```php
-// Getting a session value from the section.
-$value = $this->ExtraSession->getSessionSection()->get('key');
-```
+final class CartService
+{
+	public function __construct(
+		private readonly ExtraSession $session,
+	) {
+	}
 
+
+	public function add(int $productId): void
+	{
+		$section = $this->session->getSessionSection();
+		$items = $section->get(items) ?? [];
+		$items[] = $productId;
+		$section->set(items, $items);
+	}
+}
+```
 ## Features
 
 - Provides access to Nette sessions and session sections outside the presenter.
