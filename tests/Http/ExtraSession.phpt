@@ -62,8 +62,8 @@ test('The services from the README can be registered in the container', function
 		', 'neon'));
 	}, 'readme');
 
-	/** @var Nette\DI\Container $container */
 	$container = new $class;
+	\assert($container instanceof Nette\DI\Container);
 	$container->getByType(ExtraSession::class)->getSessionSection()->set('key', 'cart');
 	$container->getService('wishlistSession')->getSessionSection()->set('key', 'wishlist');
 
