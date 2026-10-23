@@ -58,12 +58,13 @@ final class CartService
 	public function add(int $productId): void
 	{
 		$section = $this->session->getSessionSection();
-		$items = $section->get(items) ?? [];
+		$items = $section->get('items') ?? [];
 		$items[] = $productId;
-		$section->set(items, $items);
+		$section->set('items', $items);
 	}
 }
 ```
+
 ## Features
 
 - Provides access to Nette sessions and session sections outside the presenter.
