@@ -1,7 +1,5 @@
 # Drago Sessions
 
-[English](readme.md) | Čeština
-
 Pomocný balíček pro práci se session mimo presenter v Nette Frameworku.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/sessions/blob/main/license)

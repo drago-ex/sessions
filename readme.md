@@ -1,7 +1,5 @@
 # Drago Sessions
 
-English | [Čeština](readme.cs.md)
-
 A helper package for managing sessions outside the presenter in Nette Framework.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/drago-ex/sessions/blob/main/license)
