@@ -1,10 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 /**
  * Test: Drago\Http\ExtraSession
  */
-
-declare(strict_types=1);
 
 use Drago\Http\ExtraSession;
 use Nette\DI\Compiler;
@@ -43,7 +41,7 @@ test('Values written through the section are stored in the session', function ()
 
 test('The services from the README can be registered in the container', function () {
 	$tempDir = __DIR__ . '/../tmp';
-	@mkdir($tempDir);
+	@mkdir($tempDir); // @ directory may already exist
 
 	$loader = new ContainerLoader($tempDir, autoRebuild: true);
 	$class = $loader->load(function (Compiler $compiler): void {
@@ -63,7 +61,7 @@ test('The services from the README can be registered in the container', function
 	}, 'readme');
 
 	$container = new $class;
-	\assert($container instanceof Nette\DI\Container);
+	assert($container instanceof Nette\DI\Container);
 	$container->getByType(ExtraSession::class)->getSessionSection()->set('key', 'cart');
 	$container->getService('wishlistSession')->getSessionSection()->set('key', 'wishlist');
 
